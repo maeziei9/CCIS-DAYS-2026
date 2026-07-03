@@ -11,7 +11,52 @@
             padding: 20px;
             width: 450px;
             margin: 20px auto;
+            text-align: left;
         }
+
+        .form-registration {
+            width: 350px;
+            margin: auto;
+            text-align: right;
+            padding: 15px;
+            background-color: antiquewhite;
+}
+        .overview{
+            width:900px;
+            margin:30px auto;
+            background-color:white;
+            padding:25px;
+            border:1px solid #d6d6d6;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+        
+        .navigation{
+            padding:20px;
+            font-size: larger;
+            word-spacing: 15px;
+        }
+        .loc{
+            background-color: rgb(17, 218, 60);
+            border-width: 20px;
+        }
+        .sidebar{
+           width: 250px;
+           padding: 20px;
+           background-color: #eaf3e9;
+           border: 1px solid #27c275;
+           margin-top: 15px;
+           float: right;
+           text-align: justify;
+}
+
+        .code-block{
+          background-color: #141414;
+          padding: 10px;
+          border-radius: 5px;
+          font-family: monospace;
+          color: #f7f0f0;
+}
     </style>
 
 </head>
@@ -21,49 +66,56 @@
     <p>Celebrating innovation, technology, and collaboration across our campus</p>
 </div>
 
-<nav style="background-color:rgb(215, 236, 215); padding: 10px">
-        <a style="color:rgb(56, 8, 231)" href="#overview"><b>Overview</b></a> &nbsp;&nbsp;&nbsp;
-        <a style="color:rgb(56, 8, 231)" href="#schedule"><b>Schedule</b></a> &nbsp;&nbsp;&nbsp;
-        <a style="color:rgb(56, 8, 231)" href="#"><b>Location</b></a> &nbsp;&nbsp;&nbsp;
-        <a style="color:rgb(56, 8, 231)" href="#"><b>Registration</b></a> &nbsp;&nbsp;&nbsp;
-        <a style="color:rgb(56, 8, 231)" href="#"><b>FAQ</b></a> &nbsp;&nbsp;&nbsp;
-        <a style="color:rgb(56, 8, 231)" href="#"><b>Tech Demo</b></a>
+<nav class="navigation">
+        <a  href="#overview"><b>Overview</b></a> 
+        <a  href="#location"><b>Location</b></a> 
+        <a  href="#registration"><b>Registration</b></a>
+        <a  href="#faq"><b>FAQ</b></a> 
+        <a  href="#techdemo"><b>TechDemo</b></a>
 </nav>
 <hr>
-<div id="#overview"style="text-align:center">
+<div class="overview">
     <h1><b>Event Overview</b></h1>
     <p><b>SMCC-CCIS Week 2026</b> is an annual campus event that showcases the latest innovations in technology and fosters collaboration among students, faculty, and industry professionals.</p>
 
     <p>Join us for a week filled with engaging workshops, insightful talks, and hands-on demonstrations that highlight the cutting-edge advancements in computer science and information systems.</p>
     <img src="IMAGES/ccis1.jpg" width="500px" alt="SMCC-CCIS Week 2026 Banner">
-</div>
-<aside style="float:right; width:500px; border:1px solid black; padding:20px; background-color: rgb(17, 95, 163);">
-    <h2>Event Info & Contacts</h2>
-    <p>SMCC-CCIS Week 2026 is organized by the
-       <br>
-       College of Computing and Information Sciences</p>
-    <p>For inqueries, email:<b>ccisweek@myschool.edu</b></p>
-    <hr>
-    <p><b>Event Higlights:</b></p>
-    <ul>
-  <li>Live Coding Sessions</li>
-  <li>Industry Speakers</li>
-  <li>Project Exhibit</li>
-</ul>
-<hr>
-<p><b>Character Encoding</b></p>
-<p>This page uses UTF-8 encoding, defined as:</p>
 
-<div style="text-align: center;">
-    <p style="display: inline-block; background-color: green; color: white; padding: 5px 10px; margin: 0;">
-        <b>&lt;meta charset="UTF-8"&gt;</b>
+<aside class="sidebar">
+
+    <h3>Event Info & Contacts</h3>
+
+    <p> SMCC Campus</p>
+
+    <p>For inquiries, email:</p>
+
+    <p>
+        <a href="emailto:cisweek@myschool.edu">
+            ccisweek@myschool.edu
+        </a>
     </p>
-</div>
-<p>Special characters and entities: © 2026 SMCCCCIS Week Made with</p>
+
+    <h3>Event Highlights</h3>
+
+    <p>• Live coding sessions</p>
+    <p>• Industry speakers</p>
+    <p>• Project exhibits</p>
+
+    <h3>Character Encoding</h3>
+
+    <p>This page uses UTF-8 encoding, defined as:</p>
+
+    <div class="code-block">
+        <code>&lt;<b>meta charset="UTF-8"</b>&gt;</code>
+    </div>
+
+    <p>
+        Special characters and entities:
+        &copy; 2026 SMCC-CCIS Week
+        Made with &hearts;
+    </p>
 
 </aside>
-
-
 
 <hr>
 <div id="#schedule" style="background-color: rgb(23, 212, 124)">
@@ -78,15 +130,15 @@
     </ul>
 </div>
 <hr>
-<div style="background-color: rgb(72, 233, 40) ">
+<div id="location" class="loc">
     <h1><b>Event Location Map</b></h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.824706942271!2d125.33782747367275!3d8.988272389627923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301ca2f04581cbb%3A0xe4e2656c7835d5f2!2sSaint%20Michael%20College%20of%20Caraga!5e0!3m2!1sen!2sph!4v1782990153027!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1783078003763!6m8!1m7!1spdVDUhSkANIHs_1mfcIGRw!2m2!1d8.988105949376836!2d125.3406159748301!3f267.2545051135502!4f-5.844710218179557!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </div>
 <hr>
-<div class="form-container">
-    <h1 style="text-align:center;">Event Registration Form</h1>
+<div id="registration" class="form-container">
+    <h1>Event Registration Form</h1>
 
-    <form id="registration-form" style="width:350px; margin:auto; text-align:left;">
+    <form id="form-registration">
 
         <label for="fullname">Full Name:</label><br>
         <input type="text" id="fullname" name="fullname" required minlength="3"><br><br>
@@ -97,14 +149,29 @@
         <label for="student-id">Student ID:</label><br>
         <input type="text" id="student-id" name="student-id" required pattern="[0-9]{6,12}"><br><br>
 
-        <label for="year-level">Year Level:</label><br>
-        <select id="year-level" name="year-level" required>
-            <option value="">Select Year Level</option>
-            <option value="1st Year">1st Year</option>
-            <option value="2nd Year">2nd Year</option>
-            <option value="3rd Year">3rd Year</option>
-            <option value="4th Year">4th Year</option>
-        </select><br><br>
+        <label for="course"><b>Course</b></label><br>
+        <select id="course" name="course">
+        <option value="">Select Course</option>
+        <option>BS Computer Science</option>
+        <option>BS Information Technology</option>
+        <option>BS Information Systems</option>
+    </select>
+    <br><br>
+
+    <label for="birthdate"><b>Birthdate:</b></label><br>
+    <input type="date" id="birthdate" name="birthdate">
+
+    <br><br>
+
+    <label for="arrival"><b>Preferred Arrival Time</b></label><br>
+    <input type="time" id="arrival" name="arrival">
+
+    <br><br>
+
+    <label for="year"><b>Year Level:</b></label><br>
+    <input type="text" id="year" name="year" placeholder="Enter your year level">
+
+</form>
 
         <label>Event to Join:</label><br>
         <input type="checkbox" name="event" value="Coding Hackathon"> Coding Hackathon<br>
